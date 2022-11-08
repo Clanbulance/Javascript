@@ -5,45 +5,25 @@
 <link rel="stylesheet" href="style.css">
 </head>
 	<body>
-<h1>Weatherforast</h1>
-<label for="weather"> What's the weather today</label>
-<select id="weather">
-<option value="">Make a choice </option>
-<option value="sunny"> Sunny </option>
-<option value="stormy">Stormy</option>
-<p></p>
-</select>
-<p id="textfield"><p>
-<script>
-const select = document.querySelector('select');
-const para = document.getElementById('textfield');
+<h1>JavaScript Practice</h1>
+<p> The results will be shown in the box below</p>
+<div class="javabox">
+<button id="btn">Activate</button>
+<div class="rightbox">
+<p id="Infobox" >After clicking on the "Activate button" The code will run and require you to provide input if needed</p>
+</div>
+</div>
 
-select.addEventListener('change',setWeather);
-
-function setWeather(){
-const choice = select.value;
-
-  switch (choice) {
-    case 'sunny':
-      para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-      break;
-    case 'stormy':
-      para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
-      break;
-    case 'snowing':
-      para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-      break;
-    case 'overcast':
-      para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-      break;
-    default:
-      para.textContent = '';
-  }
-}
-
-</script>
 
 </body>
-</html>
+<script>
+document.getElementById('btn').addEventListener('click',test);
+function test(){
+document.getElementById('Infobox').innerHTML = "You've clicked the button";
+}
+</script>
 
+
+</html>
+sr
 
