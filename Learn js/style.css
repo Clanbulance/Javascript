@@ -37,8 +37,15 @@ body{
 
 }
 
+.leftBox{
+	border: solid black 2px;
+	width:33%;
+	height:100%;
+	border-radius: 4px ;
+}
+
 button{
-	width:30%;
+	width:33%;
 	height:100%;
 	flex:1 0 auto;
     color: white;
@@ -58,16 +65,19 @@ button:hover {
 
 
 .rightbox{
-	width:70%;
+	width:33%;
 	height:100%;
 	flex:1 0 auto;
 	border:2px solid black;
 	border-radius: 4px;
-	
-	
-	
-	
 }
+	
+	
+#righttbox{
+	background-color: green;
+}
+	
+
 
 	
 h1{
@@ -84,7 +94,7 @@ padding:5px;
 flex:1 1 0;
 }
 
-.javabox {
+.javabox{
 	width:350px;
 	height:150px;
 	background-color:#FAF8F9;
@@ -92,4 +102,22 @@ flex:1 1 0;
 	align-items:center;
 	flex:1 0 auto;
 	
+}
+
+li{
+	border-radius: 100px;
+	border-style:groove;
+	padding:5px;
+	margin-top: 0px;
+	background-color: rgb(207, 127, 6);
+}
+
+
+a{
+	text-decoration: none;
+}
+
+li:hover{
+	background-color: rgb(207, 6, 90);
+
 }
