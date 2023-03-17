@@ -16,6 +16,9 @@
 <h1 id="h11">JavaScript</h1>
 <p> The results will be shown in the box below</p>
 <div class="javabox">
+	<div class="leftBox" id="leftBox">
+		<input type="text" id="numberInput" placeholder="Input number here">
+	</div>
 <button id="btn">Activate</button>
 <div class="rightbox" id="righttbox">
 <p id="Infobox" >After clicking on the "Activate button" The code will run and require you to provide input if needed</p>
@@ -26,20 +29,31 @@
 
 </body>
 <script>
-number = Number(prompt("enter a number"));
+
 let button = document.getElementById("btn");
 let txt = document.getElementById("Infobox");
 
+button.addEventListener('click',returnText);
 button.addEventListener('click',numberChecker);
+
+function returnText(nr){
+	console.log("returntext is called");
+	window.number = document.getElementById("numberInput").value; // Because of using the "window" instead of let/var this variable is saved as a global variable and thus can be used outside of this function
+}
 
 
 function numberChecker() {
+	console.log("numberchecker is called");
+	console.log(number);
+
+
+
 	if(number >= 10) {
-		document.getElementById("Infobox").innerHTML = "The Number is greater or equal"
-		document.getElementById("righttbox").style.backgroundcolor="red";
+		document.getElementById("Infobox").innerHTML = "The Number is greater or equal";
+
 	} else {
-		document.getElementById("Infobox").innerHTML = "The Number is small"
-		document.getElementByid("h11").style.backgroundcolor=red;
+		document.getElementById("Infobox").innerHTML = "The Number is small";
+		document.getElementById("h11").style.backgroundcolor="red";
 	}
 }
 
