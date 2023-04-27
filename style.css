@@ -44,6 +44,15 @@ body{
 	height: 100%;
 	display: flex;
 	flex: 1 1 0px;
+	width:20px;
+}
+
+
+.arrowBox{
+	display:flex;
+	height: 100%;
+	flex: 1 1 0px;
+	width:20%;
 }
 
 .buttonDiv{
@@ -54,6 +63,7 @@ body{
 	border-radius: 4px;
 	border:solid black 2px;
 	background-color:#E5BA73;
+	width:20%;
 	
 
 }
@@ -81,6 +91,7 @@ button:hover {
 	padding:5px;
 	display:flex;
 	flex: 1 1 0px;
+	width:20%;
 }
 	
 	
@@ -111,6 +122,8 @@ h1{
 	align-items:center;
 	flex:auto;	
 	height: 250px;
+	max-width: 1300px;
+
 }
 
 
