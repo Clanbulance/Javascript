@@ -44,7 +44,7 @@ body{
 	padding:5px;
 	height: 100%;
 	display: flex;
-	flex: 1 1 0px;
+	flex: 1 0 0px;
 	width:20px;
 }
 
@@ -56,14 +56,14 @@ body{
 .arrowBox{
 	display:flex;
 	height: 100%;
-	flex: 1 1 0px;
 	width:20%;
+	flex:1 2 0px;
 }
 
 .buttonDiv{
 	height: 100%;
 	display:flex;
-	flex: 1 1 0px;
+	flex: 1 0 0px;
 	padding:5px;
 	border-radius: 4px;
 	border:solid black 2px;
@@ -78,7 +78,8 @@ button{
     text-align: center;
     background-color : #E5BA73;
 	border-radius: 4px;
-	flex: 1 1 0px;
+
+	flex: 1 0 0px;
 	border:none;
 	
 	
@@ -97,7 +98,7 @@ button:hover {
 	justify-content: center;
 	padding:5px;
 	display:flex;
-	flex: 1 1 0px;
+	flex: 1 0 0px;
 	width:20%;
 }
 	
@@ -156,13 +157,21 @@ li:hover{
 .bigBox{
 	display:flex;
 	margin-top: 20px;
-	flex-grow: 1;
-
-
+	height: 200px;
+	padding: 20px;
+	gap: 50px;
+	
 }
 
-.box1, .box2, .box3{
-	border: 2px solid black;
-	padding:20px;
+#resultBox{
+	border:2px solid black;
+	background-color: #FAF8F9;
+	
+}
+
+
+.codeBox{
+	margin:20px;
+	background-color: lightgray;
 	
 }

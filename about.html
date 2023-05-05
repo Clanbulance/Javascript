@@ -5,23 +5,61 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 </head>
-	<body>
+<body>
 		<div class="header">
 			<ul class="headerlist">
 				<li>Robbert-Jan</li>
 				<li class="rightlist"><a href=".\index.html">home</a></li>
-				<li><a href=".\about.html">about</a></li>
+				<li><a href=".\about.html">Random from array</a></li>
 			</ul>
 		</div>
 	<div class="bigBox">
-	<div class="box1">Text</div>
-	<div class="box2">Text</div>
-	<div class="box3">Text</div>
-	</div>
-</div>
+		<div>
+			<p>This page show how to get a random item from an array</p>
+			<p>Names:Chris, li Kang, Anne, Francesca, Mustafa, Tina, Bert, Jada</p>
+		</div>
 
+		<div>
+			<p id="resultBox">Result comes here</p>
+		</div>
+	</div>
+
+	<p class="codeBox">
+	const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+		<br>
+	const para = document.getElementById("resultBox");
+		<br>
+		<br>
+	function chooseName() {
+		<br>
+	return names[Math.floor(Math.random()*names.length)];;
+		<br>
+	}
+		<br>
+	para.addEventListener("click", function(){
+		<br>
+	para.textContent = chooseName(names);
+		<br>
+	});
+		<br>
+	</p>
 
 </body>
+<script>
+const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+const para = document.getElementById("resultBox");
+
+function chooseName() {
+return names[Math.floor(Math.random()*names.length)];;
+}
+
+para.addEventListener("click", function(){
+	para.textContent = chooseName(names);
+});
+
+
+// Don't edit the code below here!
+</script>
 
 
 </html>
