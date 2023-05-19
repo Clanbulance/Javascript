@@ -14,8 +14,100 @@
 				<li><a href=".\skeleton.html">skeleton</a></li>
 			</ul>
 		</div>
+        <div class="codeboxes">
+        <div class="codebox">
+            <p> Normal functions</p>
+            <code>   
+                
+                    function add7(x){
+                        <br>
+                   return x + 7;
+                   <br>
+                }
+                <br>
+                <br>
+                function multiply(x,y){
+                    <br>
+                    return x * y;
+                   <br>
+
+                }
+                <br>
+                <br>
+                function capitalize(x){  
+                   <br>
+                x = x.toLowerCase();
+                <br>
+                  x = x.charAt(0).toUpperCase() + x.slice(1); 
+                  <br>
+                  return x;
+                  <br>
+                 }
+                 <br>
+                 <br>
+    
+                 function lastLetter(string){
+                    <br>
+                    y = string.charAt(string.length - 1);
+                    <br>
+                    return y;
+                    <br>
+                 }
+                 <br>
+                 <br>
+                 
+            </code>
+        </div>
+        <div class="codebox">
+            <p>Arrow functions</p>
+            <code>   
+                    add7Arrow = x => x+7;
+                    <br>
+                    <br>
+                    multiplyArrow = (x,y) => x*y;
+                    <br>
+                    <br>
+                
+                    function capitalize(x){  //Still need to figure out this one
+                        <br>
+                    x = x.toLowerCase();
+                    <br>
+                    x = x.charAt(0).toUpperCase() + x.slice(1);
+                    <br> 
+                    return x;
+                    <br>
+                    }
+                    <br>
+                    <br>
+    
+    
+                    lastLetterArrow = string => string.charAt(string.length -1);
+            </code>
+        </div>
+        </div>
+    
 
         <script>
+            function add7(x){
+                return x + 7;
+            }
+            
+            multiply = (x,y) => x * y;
+
+            function capitalize(x){  
+            x = x.toLowerCase();
+              x = x.charAt(0).toUpperCase() + x.slice(1); 
+              return x;
+             }
+
+
+
+             function lastLetter(string){
+                y = string.charAt(string.length - 1);
+                return y;
+             }
+
+             lastLetter2 = string => string.charAt(string.length -1);
 
         </script>
     </body>
