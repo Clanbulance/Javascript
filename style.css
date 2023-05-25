@@ -11,23 +11,37 @@ body{
 	
 }
 
-.header{
-	background-color:#c58940;
-	margin: 0%;
-	padding: 10px;
-}
-.headerlist{
-	display:flex;
+
+ul{
 	list-style: none;
-	padding:0px;
-	
-	
+	margin: 0;
+	padding: 0;
+	background-color: #E5BA73;
+	height: auto;
 	
 }
 
-.rightlist{
-	margin-left: auto;
+li{
+	float:left;
 }
+
+li a {
+	display:block;
+	text-decoration: none;
+	color:black;
+	padding:8px;
+	
+}
+
+li a:hover{
+	background-color: antiquewhite;
+	box-shadow: 0px -2px  black inset;
+}
+
+.rightlist{
+	float: right;
+}
+
 
 .practicebox{
 	display:flex;
@@ -133,27 +147,6 @@ h1{
 
 }
 
-
-li{
-	border-radius: 100px;
-	border-style:groove;
-	padding:5px;
-	margin-top: 0px;
-	background-color: rgb(207, 127, 6);
-	margin-left: 10px;
-}
-
-
-a{
-	text-decoration: none;
-}
-
-li:hover{
-	background-color: rgb(207, 6, 90);
-
-}
-
-
 .bigBox{
 	display:flex;
 	margin-top: 20px;
@@ -189,3 +182,18 @@ li:hover{
 	font-size:0.9em;
 	/* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
 }
+
+
+.arrow {
+	width: 0.5em;
+	height: 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 0.15em solid currentColor;
+	border-bottom: 0.15em solid currentColor;
+	transform: rotate(-45deg);
+	margin-left: 0.38em;
+	margin-top: -0.25em;
+	transition: transform 100ms ease-in-out;
+}
+
