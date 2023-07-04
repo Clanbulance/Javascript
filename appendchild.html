@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<ul class="headerList">
+			<li style="padding:8px;">Robbert-Jan</li>
+			<li class="rightlist"><a href=".\index.html">Home</a></li>
+			<li class="rightlist"><a href=".\about.html">Random from array</a></li>
+			<li class="rightlist"><a href=".\skeleton.html">Skeleton</a></li>
+			<li class="rightlist"><a href=".\fizzbuzz.html">Fizzbuzz</a></li>
+            <li class="rightlist"><a href=".\appendchild.html">AppendChild</a></li>
+		</ul>
+<div id="buttonDiv-1">
+    <button id="button-1">Click here to append a new div</button>
+</div>
+<div id="container">
+    
+</div>
+</body>
+<script>
+    const button = document.getElementById("buttonDiv-1");
+    const container = document.querySelector("#container");
+
+
+
+
+
+button.addEventListener( "mouseenter" , () => {
+    const containerItem = document.createElement("div");
+    containerItem.classList.add("content");
+    containerItem.textContent = "This is the new textContent in the Div";
+    containerItem.style.border = "solid 2px black";
+    containerItem.style.display = "flex";
+    containerItem.style.justifyContent = "center";
+    containerItem.style.backgroundColor = "rgba(224, 224, 77, 0.664)";
+    containerItem.style.borderRadius = "20px";
+    containerItem.style.margin = "16px";
+    containerItem.style.padding = "8px";
+    containerItem.style.width = "50%";
+    container.appendChild(containerItem);
+
+});
+
+
+
+
+button.addEventListener( "mouseleave" , () =>{
+    container.removeChild(container.firstElementChild);
+});
+
+
+</script>
+</html>
